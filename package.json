@@ -20,5 +20,8 @@
   "dependencies": {
     "aws-serverless-express": "^3.2.0",
     "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "serverless-apigw-binary": "^0.4.4"
   }
 }
