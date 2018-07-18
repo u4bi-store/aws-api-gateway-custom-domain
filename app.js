@@ -2,6 +2,7 @@ const express = require('express')
 
 const assets = require('./build/assets.json')
 const renderScripts = require('./common/render/scripts')
+const renderStyles = require('./common/render/styles')
 
 const app = express()
 
@@ -37,6 +38,7 @@ app.get('/', (req, res) => {
             <meta charset="utf-8" />
             <title>lambda-ssr-poc</title>
 
+            ${ renderStyles(assets) }
             ${ renderScripts(assets) }
 
         </head>
