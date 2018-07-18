@@ -1,0 +1,23 @@
+{
+  "name": "lambda-ssr-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myungjaeyu/aws-lambda-ssr-poc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/myungjaeyu/aws-lambda-ssr-poc/issues"
+  },
+  "homepage": "https://github.com/myungjaeyu/aws-lambda-ssr-poc#readme",
+  "dependencies": {
+    "serverless-http": "^1.6.0"
+  }
+}
