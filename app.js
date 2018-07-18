@@ -5,6 +5,9 @@ const app = express()
 var flag = 'aa'
 
 
+app.use(express.static(`${__dirname}/build`))
+
+
 app.use((req, res, next) => {
 
     // res.setHeader('Access-Control-Allow-Origin', '*')
@@ -34,6 +37,7 @@ app.get('/', (req, res) => {
         <body>
             <div id="root">
                 <h1>ssr markup ${ flag }</h1>
+                <img src="dev/logo.png" />
             </div>
         </body>
     </html>`
