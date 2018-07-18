@@ -1,5 +1,8 @@
 const express = require('express')
 
+const assets = require('./build/assets.json')
+const renderScripts = require('./common/render/scripts')
+
 const app = express()
 
 var flag = 'aa'
@@ -33,6 +36,9 @@ app.get('/', (req, res) => {
         <head>
             <meta charset="utf-8" />
             <title>lambda-ssr-poc</title>
+
+            ${ renderScripts(assets) }
+
         </head>
         <body>
             <div id="root">
