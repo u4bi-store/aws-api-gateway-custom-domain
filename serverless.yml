@@ -2,11 +2,16 @@ service: lambda-ssr-poc
 
 plugins:
   - serverless-apigw-binary
+  - serverless-domain-manager
 
 custom:
   apigwBinary:
     types:
       - '*/*'
+  customDomain:
+    domainName: ${env:AWS_DOMAIN}
+    createRoute53Record: true
+    certificateName: ${env:AWS_DOMAIN}
 
 provider:
   name: aws
