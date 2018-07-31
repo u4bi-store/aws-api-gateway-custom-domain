@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
     <html>
         <head>
             <meta charset="utf-8" />
-            <title>lambda-ssr-poc</title>
+            <title>lambda-custom-domain</title>
 
             ${ renderStyles(assets) }
             ${ renderScripts(assets) }
@@ -45,7 +45,7 @@ app.get('/', (req, res) => {
         <body>
             <div id="root">
                 <h1>ssr markup ${ flag }</h1>
-                <img src="dev/logo.png" />
+                <img src="logo.png" />
             </div>
         </body>
     </html>`
