@@ -1,9 +1,17 @@
-# aws-lambda-ssr-poc
+# aws-api-gateway-custom-domain
 
-<img width="600" src="demo.png"/>
+<img width="400" src="_demo.png"/>
 
 ## Usage
 
 ```
-$ serverless deploy
+$ AWS_DOMAIN=www.example.io serverless create_domain
+
+$ AWS_DOMAIN=www.example.io serverless deploy
 ```
+
+### Requirements
+
+> | Vendor                    | URL                                                            |
+> |---------------------------|----------------------------------------------------------------|
+> | serverless-domain-manager | https://github.com/amplify-education/serverless-domain-manager |
